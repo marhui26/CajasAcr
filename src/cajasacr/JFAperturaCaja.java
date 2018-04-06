@@ -169,15 +169,15 @@ public class JFAperturaCaja extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel10.setText("Cajero:");
+        jLabel10.setText("Caja:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cajero 1", "Cajero 2", "Cajero 3" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Caja 1", "Caja 2", "Caja 3" }));
 
         jButton2.setText("Grabar");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"MN", "100.00"},
+                {"MN", "1000.00"},
                 {"ME", "100.00"}
             },
             new String [] {
@@ -205,7 +205,7 @@ public class JFAperturaCaja extends javax.swing.JFrame {
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(22, 22, 22)
                 .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
