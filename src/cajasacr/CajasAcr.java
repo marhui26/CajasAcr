@@ -16,6 +16,8 @@ public class CajasAcr {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        frmMenu frm = new frmMenu();
+        frm.setVisible(true);
     }
     
 }
