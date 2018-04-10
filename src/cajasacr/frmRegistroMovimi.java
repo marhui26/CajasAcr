@@ -63,7 +63,6 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
       jLabel11 = new javax.swing.JLabel();
       jComboBox2 = new javax.swing.JComboBox<>();
       jLabel24 = new javax.swing.JLabel();
-      jComboBox3 = new javax.swing.JComboBox<>();
       jTextField3 = new javax.swing.JTextField();
       jLabel31 = new javax.swing.JLabel();
       jSeparator1 = new javax.swing.JSeparator();
@@ -77,6 +76,7 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
       jSeparator2 = new javax.swing.JSeparator();
       jLabel34 = new javax.swing.JLabel();
       jComboBox4 = new javax.swing.JComboBox<>();
+      jLabel35 = new javax.swing.JLabel();
 
       jLabel25.setText("Cartera:");
 
@@ -224,18 +224,11 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
 
       jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pago de Cuota", "Pago de Oga", "Cancelación de Crédito", "Duplicado de Documentos" }));
 
-      jLabel11.setText("Tipo de Pago:");
+      jLabel11.setText("Concepto:");
 
       jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pago Ordinario", "Cancelación para Ampliación" }));
 
       jLabel24.setText("Tipo de Operación:");
-
-      jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ingreso", "Egreso" }));
-      jComboBox3.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            jComboBox3ActionPerformed(evt);
-         }
-      });
 
       jTextField3.setText("1000.00");
       jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -273,6 +266,8 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
          }
       });
 
+      jLabel35.setText("Ingreso");
+
       javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
       getContentPane().setLayout(layout);
       layout.setHorizontalGroup(
@@ -297,28 +292,6 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
                   .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                .addGroup(layout.createSequentialGroup()
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                           .addComponent(jLabel10)
-                           .addComponent(jLabel9)
-                           .addComponent(jLabel25)
-                           .addComponent(jLabel27)
-                           .addComponent(jLabel29)
-                           .addComponent(jLabel24)
-                           .addComponent(jLabel11))
-                        .addGap(81, 81, 81)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                           .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                              .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                              .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                           .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                           .addComponent(jLabel30)
-                           .addComponent(jLabel28)
-                           .addComponent(jLabel26)
-                           .addGroup(layout.createSequentialGroup()
-                              .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                              .addComponent(jButton1))))
                      .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
                      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
@@ -328,7 +301,28 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
                         .addGroup(layout.createSequentialGroup()
                            .addComponent(jLabel34)
                            .addGap(101, 101, 101)
-                           .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                           .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                           .addComponent(jLabel9)
+                           .addComponent(jLabel25)
+                           .addComponent(jLabel27)
+                           .addComponent(jLabel29)
+                           .addComponent(jLabel24)
+                           .addComponent(jLabel11)
+                           .addComponent(jLabel10))
+                        .addGap(81, 81, 81)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                           .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                           .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                           .addComponent(jLabel30)
+                           .addComponent(jLabel28)
+                           .addComponent(jLabel26)
+                           .addGroup(layout.createSequentialGroup()
+                              .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                              .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                              .addComponent(jButton1))
+                           .addComponent(jLabel35))))
                   .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                   .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                   .addGap(148, 148, 148))))
@@ -342,15 +336,15 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
          .addGroup(layout.createSequentialGroup()
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(layout.createSequentialGroup()
-                  .addGap(24, 24, 24)
-                  .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                     .addComponent(jLabel24))
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                  .addGap(23, 23, 23)
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                      .addComponent(jLabel10)
                      .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                  .addGap(3, 3, 3)
+                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                  .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                     .addComponent(jLabel24)
+                     .addComponent(jLabel35))
+                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                      .addComponent(jLabel11)
                      .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -361,17 +355,17 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
                      .addComponent(jButton1))
                   .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                     .addComponent(jLabel29)
+                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                  .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                      .addComponent(jLabel25)
                      .addComponent(jLabel26))
                   .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                      .addComponent(jLabel27)
                      .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                  .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                     .addComponent(jLabel29)
-                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                  .addGap(31, 31, 31)
                   .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                   .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                   .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -407,10 +401,6 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
       // TODO add your handling code here:
    }//GEN-LAST:event_jTextField2ActionPerformed
 
-   private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-      // TODO add your handling code here:
-   }//GEN-LAST:event_jComboBox3ActionPerformed
-
    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_jTextField3ActionPerformed
@@ -430,7 +420,6 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
    private javax.swing.JButton jButton3;
    private javax.swing.JComboBox<String> jComboBox1;
    private javax.swing.JComboBox<String> jComboBox2;
-   private javax.swing.JComboBox<String> jComboBox3;
    private javax.swing.JComboBox<String> jComboBox4;
    private javax.swing.JLabel jLabel1;
    private javax.swing.JLabel jLabel10;
@@ -460,6 +449,7 @@ public class frmRegistroMovimi extends javax.swing.JInternalFrame {
    private javax.swing.JLabel jLabel32;
    private javax.swing.JLabel jLabel33;
    private javax.swing.JLabel jLabel34;
+   private javax.swing.JLabel jLabel35;
    private javax.swing.JLabel jLabel4;
    private javax.swing.JLabel jLabel5;
    private javax.swing.JLabel jLabel6;
